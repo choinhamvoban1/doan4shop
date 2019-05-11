@@ -58,6 +58,8 @@ public class fragment_dangnhap extends Fragment {
             edttkdn.setText(sharedPreferences.getString("taikhoan",""));
             edtmkdn.setText(sharedPreferences.getString("matkhau",""));
             cb.setChecked(sharedPreferences.getBoolean("cbluumk",false));
+
+            Toast.makeText(getContext(), "ok ok ", Toast.LENGTH_SHORT).show();
         }else{
             edttkdn.setText("");
             edtmkdn.setText("");
